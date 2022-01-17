@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // spread operators
+        x=[20,30,40];
+        y=[...x,50,60,70];
+        console.log(y);
+
+        z=[...y,...x];
+        z=[...y];
+        z=[20,30,...x];
+        console.log(z);
+
+        p=[...x,...y,...z];
+        console.log(p);
+    </script>
+</body>
+</html>
